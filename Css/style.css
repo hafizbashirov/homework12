@@ -1,0 +1,54 @@
+.main{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    float: left;
+    display: flex;
+    position: absolute;
+
+    
+
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes animation {
+
+    0%{
+        width: 100px;
+        height: 100px;
+        top: 0px;
+        left: 0px;
+        background: blue;
+        border-style: solid;
+        border-color: red;
+        border-width: 0px;
+    }
+    
+    50%{
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        left: 100px;
+        background: red;
+        border-style: solid;
+        border-color: red;
+        border-width: 0px;
+    }
+    
+    
+    100%{
+        width: 95px;
+        height: 95px;
+        top: 0px;
+        left: 200px;
+        background: black;
+        border-style: solid;
+        border-width: 5px;
+        border-color: green;
+    }
+
+}
